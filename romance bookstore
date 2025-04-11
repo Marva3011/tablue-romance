@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📊 Romance Bookstore Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      color: #333;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section {
+      margin: 60px 0;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      color: #d23f57;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .viz-wrapper {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      animation: slideIn 1.5s ease-out;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Romance Bookstore Insights & Cafe Vibes ☕</h1>
+    <p>Where data meets love stories 💕</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>🔍 Explore Our Sales & Visitor Analytics</h2>
+      <p>Take a peek into our cozy world of romance novels and lattes. Here’s what our readers love, when they love it, and how long they stay! 🤓📈</p>
+
+      <div class="viz-wrapper">
+        <iframe src="https://public.tableau.com/views/romancebookstore/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" width="100%" height="700" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📖 Book Trends by Genre</h2>
+      <p>Which romantic sub-genres are stealing hearts? From historic love affairs to thrilling fantasy romances, see what keeps our customers turning the pages!</p>
+    </div>
+
+    <div class="section">
+      <h2>👫 Reader Demographics</h2>
+      <p>Who's walking through our doors? Discover the balance between male and female readers, and how long they stay to sip & shop.</p>
+    </div>
+
+    <div class="section">
+      <h2>🎉 Holiday Highlights</h2>
+      <p>Love is in the air during holidays! Track our peak sales around Valentine’s Day, Hanukkah, and more 🕎❤️</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Romance Bookstore & Cafe | 📊 Powered by Tableau</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("Page loaded and ready to spread the love!");
+    });
+  </script>
+</body>
+</html>
